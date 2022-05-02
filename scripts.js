@@ -72,7 +72,7 @@ buttonsShop.forEach((button) =>
 
 mainBtn.addEventListener("click", () => {
   if (counter === 0) {
-    window.navigator.vibrate(300);
+    navigator.vibrate(200);
     shopError.classList.remove("hidden");
   } else {
     shopError.classList.add("hidden");
