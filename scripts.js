@@ -57,6 +57,20 @@ const buttonsShop = document.querySelectorAll(".btn-shop");
 const shopCounter = document.querySelector("[data-number]");
 const shopError = document.querySelector("[data-error]");
 const mainBtn = document.querySelector("[data-mainBtn]");
+function vibrate() {
+  if (!window) {
+    return;
+  }
+
+  if (!window.navigator) {
+    return;
+  }
+
+  if (!window.navigator.vibrate) {
+    return;
+  }
+  window.navigator.vibrate(100);
+}
 console.log(mainBtn);
 let counter = 0;
 
@@ -72,7 +86,7 @@ buttonsShop.forEach((button) =>
 
 mainBtn.addEventListener("click", () => {
   if (counter === 0) {
-    navigator.vibrate(200);
+    vibrate();
     shopError.classList.remove("hidden");
   } else {
     shopError.classList.add("hidden");
