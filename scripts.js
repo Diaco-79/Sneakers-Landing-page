@@ -92,3 +92,24 @@ mainBtn.addEventListener("click", () => {
     shopError.classList.add("hidden");
   }
 });
+
+// desktop image slider
+const thumbNails = document.querySelectorAll(".img-thumbnail");
+const images = document.querySelectorAll(".img");
+
+thumbNails[0].dataset.active = "true";
+images[0].dataset.active = "true";
+
+for (const [index, element] of [...thumbNails.entries()]) {
+  element.addEventListener("click", function () {
+    for (const [index, element] of [...thumbNails.entries()]) {
+      if (element.dataset.active) {
+        element.removeAttribute("data-active");
+        images[index].removeAttribute("data-active");
+      }
+    }
+
+    thumbNails[index].dataset.active = "true";
+    images[index].dataset.active = "true";
+  });
+}

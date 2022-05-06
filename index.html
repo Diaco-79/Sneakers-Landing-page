@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
 
-  <body class="overflow-x-hidden ff-kumbh-sans min-h-screen">
-    <header class="h-10vh flex justify-between items-center relative px-5">
-      <div class="left-side flex gap-4">
+  <body
+    class="overflow-x-hidden ff-kumbh-sans min-h-screen max-w-[1440px] mx-auto"
+  >
+    <header
+      class="h-10vh flex justify-between items-center relative px-5 max-w-[1440px] md:h-[8vh] md:px-0 md:mx-8 md:border-b-[1px] md:border-grayishBlue/50 lg:mx-auto"
+    >
+      <div class="left-side flex md:gap-10 md:items-center md:h-full">
         <div
-          class="hamburger relative grid place-items-center w-8 aspect-square z-[110]"
+          class="hamburger relative grid place-items-center w-8 aspect-square z-[110] mr-4 md:hidden"
         >
           <div
             class="line line-1 absolute bg-orange w-7 h-1 -translate-y-2 rounded-full animate-toggle"
@@ -30,37 +34,67 @@
             class="line line-3 absolute bg-orange w-7 h-1 translate-y-2 rounded-full"
           ></div>
         </div>
-        <div class="logo align-middle mt-1">
+        <div class="logo align-middle mt-1 md:mb-2">
           <img src="./img/logo.svg" alt="" />
         </div>
-        <nav>
+        <nav class="md:h-full">
           <ul
-            class="links flex flex-col text-grayishBlue bg-white/90 backdrop-blur-sm absolute left-0 top-0 w-4/5 h-screen justify-start divide-y divide-grayishBlue divide-opacity-50 py-20 text-md transition-transform duration-300 -translate-x-full z-[100]"
+            class="links flex flex-col text-grayishBlue bg-white/90 backdrop-blur-sm absolute left-0 top-0 w-4/5 h-screen justify-start divide-y divide-grayishBlue divide-opacity-50 py-20 text-md transition-transform duration-300 -translate-x-full z-[100] md:translate-x-[0] md:bg-transparent md:backdrop-blur-0 md:divide-y-0 md:py-0 md:flex-row md:static md:text-sm md:gap-6 md:h-full md:items-center"
           >
-            <li class="link py-3 px-5">
-              <a href="#" class="hover:text-orange">Collections</a>
+            <li
+              class="link py-3 px-5 md:py-0 md:px-0 md:h-full grid items-center md:relative"
+            >
+              <a
+                href="#"
+                class="hover:text-orange md:hover:text-grayishBlue md:hover:after:absolute after:bg-orange after:w-full after:h-1 after:left-0 after:bottom-0 after:rounded-full"
+                >Collections</a
+              >
             </li>
-            <li class="link py-3 px-5">
-              <a href="#" class="hover:text-orange">Men</a>
+            <li
+              class="link py-3 px-5 md:py-0 md:px-0 md:h-full grid items-center md:relative"
+            >
+              <a
+                href="#"
+                class="hover:text-orange md:hover:text-grayishBlue md:hover:after:absolute after:bg-orange after:w-full after:h-1 after:left-0 after:bottom-0 after:rounded-full"
+                >Men</a
+              >
             </li>
-            <li class="link py-3 px-5">
-              <a href="#" class="hover:text-orange">Women</a>
+            <li
+              class="link py-3 px-5 md:py-0 md:px-0 md:h-full grid items-center md:relative"
+            >
+              <a
+                href="#"
+                class="hover:text-orange md:hover:text-grayishBlue md:hover:after:absolute after:bg-orange after:w-full after:h-1 after:left-0 after:bottom-0 after:rounded-full"
+                >Women</a
+              >
             </li>
-            <li class="link py-3 px-5">
-              <a href="#" class="hover:text-orange">About</a>
+            <li
+              class="link py-3 px-5 md:py-0 md:px-0 md:h-full grid items-center md:relative"
+            >
+              <a
+                href="#"
+                class="hover:text-orange md:hover:text-grayishBlue md:hover:after:absolute after:bg-orange after:w-full after:h-1 after:left-0 after:bottom-0 after:rounded-full"
+                >About</a
+              >
             </li>
-            <li class="link py-3 px-5">
-              <a href="#" class="hover:text-orange">Contact</a>
+            <li
+              class="link py-3 px-5 md:py-0 md:px-0 md:h-full grid items-center md:relative"
+            >
+              <a
+                href="#"
+                class="hover:text-orange md:hover:text-grayishBlue md:hover:after:absolute after:bg-orange after:w-full after:h-1 after:left-0 after:bottom-0 after:rounded-full"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
       </div>
-      <div class="right-side flex items-center gap-4">
-        <div class="shop-cart">
+      <div class="right-side flex items-center gap-4 md:gap-6">
+        <div class="shop-cart md:opacity-50">
           <a href="#"><img src="./img/icon-cart.svg" alt="" /></a>
         </div>
         <div
-          class="profile aspect-auto w-7 rounded-full relative after:absolute after:rounded-full after:inset-0 hover:after:border-2 hover:after:border-orange after:outline-orange hover:after:cursor-pointer"
+          class="profile aspect-auto w-7 rounded-full relative after:absolute after:rounded-full after:inset-0 hover:after:border-2 hover:after:border-orange after:outline-orange hover:after:cursor-pointer md:w-9"
         >
           <a href="#"><img src="./img/image-avatar.png" alt="" /></a>
         </div>
@@ -69,11 +103,14 @@
     <main>
       <section
         id="hero"
-        class="flex flex-col gap-5 justify-between items-center mb-14"
+        class="flex flex-col md:flex-row gap-5 justify-between items-center mb-14 mx-auto max-w-[1200px] md:pt-[10%] md:px-10 md:gap-[10%] lg:justify-center lg:gap-[20%] lg:pt-[8%]"
       >
-        <div class="img-carousel w-screen h-72 relative" data-carousel>
+        <div
+          class="img-carousel w-screen h-72 sm:h-[25rem] relative md:h-min md:flex-1 md:flex md:flex-col md:gap-5 md:max-w-sm lg:max-w-xl"
+          data-carousel
+        >
           <button
-            class="button button-next absolute z-40 top-1/2 right-4 -translate-y-1/2 rounded-full aspect-square bg-white w-10"
+            class="button button-next absolute z-40 top-1/2 right-4 -translate-y-1/2 rounded-full aspect-square bg-white w-10 md:hidden"
             data-button="next"
           >
             <img
@@ -83,7 +120,7 @@
             />
           </button>
           <button
-            class="button button-perv absolute z-40 top-1/2 left-4 -translate-y-1/2 rounded-full aspect-square bg-white w-10"
+            class="button button-perv absolute z-40 top-1/2 left-4 -translate-y-1/2 rounded-full aspect-square bg-white w-10 md:hidden"
             data-button="perv"
           >
             <img
@@ -92,44 +129,84 @@
               alt=""
             />
           </button>
-          <ul class="img-slider absolute inset-0 z-10" data-slides>
-            <li class="img absolute inset-0" data-active>
+          <ul
+            class="img-slider absolute inset-0 z-10 md:relative md:h-min md:aspect-square"
+            data-slides
+          >
+            <li class="img absolute inset-0 md:static" data-active>
               <img
-                class="h-full w-full object-cover"
+                class="h-full w-full object-cover md:rounded-lg"
                 src="./img/image-product-1.jpg"
                 alt=""
               />
             </li>
             <li class="img absolute inset-0">
               <img
-                class="h-full w-full object-cover object-top"
+                class="h-full w-full object-cover object-top md:rounded-lg"
                 src="./img/image-product-2.jpg"
                 alt=""
               />
             </li>
             <li class="img absolute inset-0">
               <img
-                class="h-full w-full object-cover object-top"
+                class="h-full w-full object-cover object-top md:rounded-lg"
                 src="./img/image-product-3.jpg"
                 alt=""
               />
             </li>
-            <li class="img absolute inset-0">
+            <li class="img absolute inset-0 md:w-full">
               <img
-                class="h-full w-full object-cover object-top"
+                class="h-full w-full object-cover object-top md:rounded-lg"
                 src="./img/image-product-4.jpg"
                 alt=""
               />
             </li>
           </ul>
+          <ul
+            class="img-thumbnails hidden flex-row gap-4 md:flex"
+            data-thumbnails
+          >
+            <li class="img-thumbnail hover:opacity-50" data-activ="true">
+              <img
+                class="rounded-lg"
+                src="./img/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+            </li>
+            <li class="img-thumbnail hover:opacity-50">
+              <img
+                class="rounded-lg"
+                src="./img/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+            </li>
+            <li class="img-thumbnail hover:opacity-50">
+              <img
+                class="rounded-lg"
+                src="./img/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+            </li>
+            <li class="img-thumbnail hover:opacity-50">
+              <img
+                class="rounded-lg"
+                src="./img/image-product-4-thumbnail.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
-        <div class="hero__txt flex flex-col gap-5 px-5 mt-4">
+        <div
+          class="hero__txt flex flex-col gap-5 px-5 mt-4 md:flex-1 md:max-w-md lg:max-w-xl lg:gap-7"
+        >
           <div
-            class="txt__title text-2xl relative max-w-[20ch] font-semibold after:absolute after:content-['SNEAKER_COMPANY'] after:text-[0.65rem] after:top-[-30px] after:text-orange/80 after:tracking-widest after:"
+            class="txt__title text-2xl relative max-w-[20ch] font-semibold after:absolute after:content-['SNEAKER_COMPANY'] after:text-[0.65rem] after:top-[-30px] after:text-orange/80 after:tracking-widest md:text-3xl lg:text-4xl lg:after:top-[-40px]"
           >
             <h1>Fall Limited Edition Sneakers</h1>
           </div>
-          <div class="txt__sub-title text-[.9rem] text-darkGrayishBlue/80">
+          <div
+            class="txt__sub-title text-[.9rem] text-darkGrayishBlue/80 lg:text-[1rem] lg:leading-6"
+          >
             <p>
               These low-profile sneakers are your perfect casual wear companion.
               Featuring a durable rubber outer sole, they'll withstand
@@ -138,36 +215,42 @@
           </div>
           <div class="txt__price flex justify-between">
             <h2
-              class="text-xl font-semibold relative after:absolute after:-translate-y-1/2 after:content-['50%'] after:bg-pOrange after:text-orange/80 after:text-[0.8rem] after:leading-[1.5] after:line after:py-[1px] after:px-1.5 after:rounded-md after:top-1/2 after:right-[-50px]"
+              class="text-xl font-semibold relative after:absolute after:-translate-y-1/2 after:content-['50%'] after:bg-pOrange after:text-orange/80 after:text-[0.8rem] after:leading-[1.5] after:line after:py-[1px] after:px-1.5 after:rounded-md after:top-1/2 after:right-[-50px] lg:text-2xl"
             >
               $125.00
             </h2>
             <p
-              class="font-semibold text-md text-grayishBlue/80 relative after:w-full after:h-[2px] after:absolute after:left-0 after:bg-grayishBlue/90 after:bottom-[13px]"
+              class="font-semibold text-md text-grayishBlue/80 relative after:w-full after:h-[2px] after:absolute after:left-0 after:bg-grayishBlue/90 after:bottom-[13px] lg:text-xl"
             >
               $250.00
             </p>
           </div>
-          <div class="shop flex flex-col gap-3">
+          <div class="shop flex flex-col gap-3 md:flex-row">
             <div
-              class="shop-txt flex flex-row-reverse justify-between items-center relative bg-lighGrayishBlue px-5 py-3 rounded-md"
+              class="shop-txt flex flex-row-reverse justify-between items-center relative bg-lighGrayishBlue px-5 py-3 rounded-md md:flex-1"
             >
               <div
-                class="shop-error text-[.8rem] text-red absolute left-0 top-[-20px] hidden"
+                class="shop-error text-[.8rem] w-max text-red absolute left-0 top-[-20px] lg:top-[-25px] hidden"
                 data-error
               >
                 <p>please select atleast 1 item!</p>
               </div>
-              <div class="btn-shop minus" data-btn="plus">
+              <div
+                class="btn-shop minus hover:opacity-50 transition-all"
+                data-btn="plus"
+              >
                 <img src="./img/icon-plus.svg" alt="" />
               </div>
               <div class="number font-semibold" data-number>0</div>
-              <div class="btn-shop plus" data-btn="minus">
+              <div
+                class="btn-shop plus hover:opacity-50 transition-all"
+                data-btn="minus"
+              >
                 <img src="./img/icon-minus.svg" alt="" />
               </div>
             </div>
             <div
-              class="shop__btn grid place-items-center bg-orange px-5 py-3 rounded-md shadow-[0_20px_50px_0] shadow-orange/30"
+              class="shop__btn grid place-items-center bg-orange px-5 py-3 rounded-md shadow-[0_20px_50px_0] shadow-orange/30 md:flex-[2] hover:opacity-80 transition-all"
               data-mainBtn
             >
               <button class="flex">
